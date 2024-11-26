@@ -113,7 +113,7 @@ body {
     background-size: cover;
     background-position: center;
     opacity: 0;
-    animation: slideShow 20s infinite;
+    animation: slideShow 15s infinite;
 }
 
 .hero-background-slider .slide:nth-child(2) {
@@ -908,12 +908,12 @@ footer {
 
 /* מפה אינטראקטיבית */
 .map-section {
-    padding: 4rem 0;
+    padding: 0rem 0;
     background: white;
 }
 
 .map-container {
-    max-width: 1200px;
+    max-width: 1100px;
     margin: 0 auto;
     padding: 2rem;
 }
@@ -1086,8 +1086,13 @@ footer {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
     gap: 2rem;
-    margin-top: 2rem;
+    margin-top: 0rem;
+    padding-bottom: 5rem;
+    justify-items: center; /* מרכז את התוכן בציר האופקי */
+    align-items: center;
+    margin: 2rem;
 }
+
 .tips-section {
     background: var(--background-color);
     padding: 4rem 0;
@@ -1201,6 +1206,9 @@ footer {
     overflow: hidden;
     box-shadow: 0 4px 15px rgba(0,0,0,0.1);
     transition: transform 0.3s ease;
+    display: flex; /* הפוך את הכרטיס ל-flex container */
+    flex-direction: column; /* הצג את כל התוכן בעמודה */
+    height: 100%; /* הגדר גובה מלא כדי שהכפתור יוכל להימצא בתחתית */
 }
 
 .route-card:hover {
@@ -1254,6 +1262,9 @@ footer {
 
 .route-content {
     padding: 1.5rem;
+    display: flex;
+    flex-direction: column; /* הצג את התוכן בעמודה */
+    flex-grow: 1; /* זה מאפשר לתוכן לתפוס את כל השטח הפנוי */
 }
 
 .route-header {
@@ -1311,8 +1322,9 @@ footer {
     font-size: 0.9rem;
 }
 
+
 .route-button {
-    width: 100%;
+    width: 100%; /* כפתור ברוחב מלא */
     padding: 1rem;
     background: var(--primary-color);
     color: white;
@@ -1321,6 +1333,7 @@ footer {
     font-size: 1rem;
     cursor: pointer;
     transition: background 0.3s ease;
+    margin-top: auto; /* דוחף את הכפתור לתחתית */
 }
 
 .route-button:hover {
@@ -1333,3 +1346,4 @@ footer {
         padding: 1rem;
     }
 }
+
