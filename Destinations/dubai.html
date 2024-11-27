@@ -1,15 +1,12 @@
 <!DOCTYPE html>
 <html lang="he" dir="rtl">
-
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>דובאי - עיר העתיד של המזרח התיכון</title>
     <link rel="stylesheet" href="../styles.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
-
 </head>
-
 <body>
     <nav class="navbar">
         <div class="nav-content">
@@ -23,9 +20,9 @@
                 <span></span>
             </div>
             <ul class="nav-links">
-                <li><a href="../home-page.html"><i class="fas fa-home"></i> דף הבית</a></li>
+                <li><a href="../home_page.html"><i class="fas fa-home"></i> דף הבית</a></li>
                 <li><a href="../destionations_page.html"><i class="fas fa-map-marked-alt"></i> יעדים</a></li>
-                <li><a href="feed_back.html"><i class="fa-regular fa-comment"></i> חוות דעת</a></li>
+                <li><a href="../feedback.html"><i class="fa-regular fa-comment"></i> חוות דעת</a></li>
                 <li><a href="tips.html"><i class="fas fa-lightbulb"></i> טיפים למטייל</a></li>
                 <li><a href="contact.html" class="cta-button">צור קשר</a></li>
             </ul>
@@ -42,42 +39,284 @@
             </div>
         </section>
 
-        <section class="destination-info">
-            <h2 class="section-title">על דובאי</h2>
-            <p>דובאי, הפנינה של איחוד האמירויות, היא עיר שמשלבת מודרניות מרהיבה עם מסורת ערבית עשירה. מגורדי השחקים
-                המרשימים ועד השווקים המסורתיים, דובאי מציעה חוויה ייחודית לכל מבקר.</p>
+        <section class="routes-section">
+            <h2 class="section-title">מסלולי טיולים מומלצים בדובאי</h2>
+            <div class="routes-grid">
+                <article class="route-card">
+                    <div class="route-image">
+                        <img src="images/dubai/dubaiClassic.jpg" alt="דובאי קלאסית">
+                    </div>
+                    <div class="route-content">
+                        <div class="route-header">
+                            <h3 class="route-title">דובאי הקלאסית</h3>
+                        </div>
+                        <span class="route-price">$1,299</span>
+                        <div class="route-details">
+                            <div class="detail-item">
+                                <i class="fas fa-plane-departure"></i>
+                                <span>טיסה: 20/06/24</span>
+                            </div>
+                            <div class="detail-item">
+                                <i class="fas fa-plane-arrival"></i>
+                                <span>חזרה: 27/06/24</span>
+                            </div>
+                            <div class="detail-item">
+                                <i class="fas fa-hotel"></i>
+                                <span>מלונות: 5 כוכבים</span>
+                            </div>
+                            <div class="detail-item">
+                                <i class="fas fa-utensils"></i>
+                                <span>חצי פנסיון</span>
+                            </div>
+                        </div>
+                        <p class="route-description">
+                            חוויה מושלמת של דובאי המודרנית והמסורתית. כולל ביקור במגדל בורג' חליפה, סיור בשווקים העתיקים, וחוויות קולינריות מיוחדות.
+                        </p>
+                        <div class="route-highlights">
+                            <span class="highlight-tag">בורג' חליפה</span>
+                            <span class="highlight-tag">דובאי מול</span>
+                            <span class="highlight-tag">מזרקות דובאי</span>
+                            <span class="highlight-tag">סיור שווקים</span>
+                        </div>
+                        <button onclick="window.location='routes/classic-dubai.html'" class="route-button">
+                            לפרטים נוספים ולהזמנה
+                        </button>
+                    </div>
+                </article>
+        
+                <article class="route-card">
+                    <div class="route-image">
+                        <img src="images/dubai/luxuryDubai.jpg" alt="דובאי יוקרתית">
+                    </div>
+                    <div class="route-content">
+                        <div class="route-header">
+                            <h3 class="route-title">דובאי היוקרתית</h3>
+                        </div>
+                        <span class="route-price">$2,499</span>
+                        <div class="route-details">
+                            <div class="detail-item">
+                                <i class="fas fa-plane-departure"></i>
+                                <span>טיסה: 15/07/24</span>
+                            </div>
+                            <div class="detail-item">
+                                <i class="fas fa-plane-arrival"></i>
+                                <span>חזרה: 22/07/24</span>
+                            </div>
+                            <div class="detail-item">
+                                <i class="fas fa-hotel"></i>
+                                <span>מלונות: 7 כוכבים</span>
+                            </div>
+                            <div class="detail-item">
+                                <i class="fas fa-utensils"></i>
+                                <span>פנסיון מלא</span>
+                            </div>
+                        </div>
+                        <p class="route-description">
+                            חבילת פרימיום הכוללת לינה במלון בורג' אל ערב, ארוחות במסעדות יוקרה, סיור במסוק וחוויות VIP ייחודיות.
+                        </p>
+                        <div class="route-highlights">
+                            <span class="highlight-tag">בורג' אל ערב</span>
+                            <span class="highlight-tag">סיור מסוק</span>
+                            <span class="highlight-tag">יאכטה פרטית</span>
+                            <span class="highlight-tag">שמורת אל מהא</span>
+                        </div>
+                        <button onclick="window.location='routes/luxury-dubai.html'" class="route-button">
+                            לפרטים נוספים ולהזמנה
+                        </button>
+                    </div>
+                </article>
+        
+                <article class="route-card">
+                    <div class="route-image">
+                        <img src="images/dubai/desertDubai.jpg" alt="הרפתקאות מדבר">
+                    </div>
+                    <div class="route-content">
+                        <div class="route-header">
+                            <h3 class="route-title">הרפתקאות מדבר</h3>
+                        </div>
+                        <span class="route-price">$1,599</span>
+                        <div class="route-details">
+                            <div class="detail-item">
+                                <i class="fas fa-plane-departure"></i>
+                                <span>טיסה: 10/09/24</span>
+                            </div>
+                            <div class="detail-item">
+                                <i class="fas fa-plane-arrival"></i>
+                                <span>חזרה: 17/09/24</span>
+                            </div>
+                            <div class="detail-item">
+                                <i class="fas fa-hotel"></i>
+                                <span>מלון ומאהל מדברי</span>
+                            </div>
+                            <div class="detail-item">
+                                <i class="fas fa-utensils"></i>
+                                <span>פנסיון מלא</span>
+                            </div>
+                        </div>
+                        <p class="route-description">
+                            חוויה ייחודית המשלבת לינה במדבר, ספארי ג'יפים, רכיבה על גמלים וארוחות בדואיות מסורתיות.
+                        </p>
+                        <div class="route-highlights">
+                            <span class="highlight-tag">ספארי מדברי</span>
+                            <span class="highlight-tag">גלישת חולות</span>
+                            <span class="highlight-tag">לינה במדבר</span>
+                            <span class="highlight-tag">רכיבת גמלים</span>
+                        </div>
+                        <button onclick="window.location='routes/desert-adventure.html'" class="route-button">
+                            לפרטים נוספים ולהזמנה
+                        </button>
+                    </div>
+                </article>
+        
+                <article class="route-card">
+                    <div class="route-image">
+                        <img src="images/dubai/familyDubai.jpg" alt="דובאי למשפחות">
+                    </div>
+                    <div class="route-content">
+                        <div class="route-header">
+                            <h3 class="route-title">דובאי למשפחות</h3>
+                        </div>
+                        <span class="route-price">$1,899</span>
+                        <div class="route-details">
+                            <div class="detail-item">
+                                <i class="fas fa-plane-departure"></i>
+                                <span>טיסה: 01/08/24</span>
+                            </div>
+                            <div class="detail-item">
+                                <i class="fas fa-plane-arrival"></i>
+                                <span>חזרה: 08/08/24</span>
+                            </div>
+                            <div class="detail-item">
+                                <i class="fas fa-hotel"></i>
+                                <span>מלון משפחות 5 כוכבים</span>
+                            </div>
+                            <div class="detail-item">
+                                <i class="fas fa-utensils"></i>
+                                <span>חצי פנסיון</span>
+                            </div>
+                        </div>
+                        <p class="route-description">
+                            מסלול מותאם למשפחות הכולל פארקי שעשועים, פעילויות לילדים ואטרקציות מהנות לכל המשפחה.
+                        </p>
+                        <div class="route-highlights">
+                            <span class="highlight-tag">אקווריום דובאי</span>
+                            <span class="highlight-tag">לגולנד</span>
+                            <span class="highlight-tag">מוזיאון העתיד</span>
+                            <span class="highlight-tag">IMG Worlds</span>
+                        </div>
+                        <button onclick="window.location='routes/family-dubai.html'" class="route-button">
+                            לפרטים נוספים ולהזמנה
+                        </button>
+                    </div>
+                </article>
+            </div>
         </section>
 
         <section class="gallery-section">
-            <div class="destination-info">
-                <h2 class="section-title">גלריית תמונות</h2>
-                <div class="gallery-grid">
-                    <div class="gallery-item">
-                        <img src="images/dubai/Burj-Khalifa-1.jpg" alt="בורג' חליפה">
-                        <div class="gallery-overlay">
-                            <h3>בורג' חליפה</h3>
-                            <p>הבניין הגבוה בעולם</p>
-                        </div>
+            <h2 class="section-title">גלריית תמונות</h2>
+            <div class="gallery-grid">
+                <!-- שורה 1 -->
+                <div class="gallery-item">
+                    <img src="images/dubai/Burj-Khalifa-1.jpg" alt="בורג' חליפה">
+                    <div class="gallery-overlay">
+                        <h3>בורג' חליפה</h3>
+                        <p>הבניין הגבוה בעולם</p>
                     </div>
-                    <div class="gallery-item">
-                        <img src="images/dubai/dubaiMall.jpg"
-                            alt="דובאי מול">
-                        <div class="gallery-overlay">
-                            <h3>דובאי מול</h3>
-                            <p>מרכז הקניות הגדול בעולם</p>
-                        </div>
+                </div>
+                <div class="gallery-item">
+                    <img src="images/dubai/dubaiMall.jpg" alt="דובאי מול">
+                    <div class="gallery-overlay">
+                        <h3>דובאי מול</h3>
+                        <p>מרכז הקניות הגדול בעולם</p>
                     </div>
-                    <div class="gallery-item">
-                        <img src="https://www.timeoutdubai.com/cloud/timeoutdubai/2021/09/11/hfpqyV7B-IMG-Dubai-UAE-1200x900.jpg"
-                            alt="IMG עולם">
-                        <div class="gallery-overlay">
-                            <h3>IMG עולם הפנאי</h3>
-                            <p>פארק שעשועים מקורה</p>
-                        </div>
+                </div>
+                <div class="gallery-item">
+                    <img src="https://www.timeoutdubai.com/cloud/timeoutdubai/2021/09/11/hfpqyV7B-IMG-Dubai-UAE-1200x900.jpg"
+                        alt="IMG עולם">
+                    <div class="gallery-overlay">
+                        <h3>IMG עולם הפנאי</h3>
+                        <p>פארק שעשועים מקורה</p>
+                    </div>
+                </div>
+                <div class="gallery-item">
+                    <img src="images/dubai/museum.jpg" alt="מוזיאון העתיד">
+                    <div class="gallery-overlay">
+                        <h3>מוזיאון העתיד</h3>
+                        <p>טרייד סנטר</p>
+                    </div>
+                </div>
+        
+                <!-- שורה 2 -->
+                <div class="gallery-item">
+                    <img src="images/dubai/aquaium.jpg" alt="אקווריום">
+                    <div class="gallery-overlay">
+                        <h3>אקווריום</h3>
+                        <p>גן חיות תת ימי</p>
+                    </div>
+                </div>
+                <div class="gallery-item">
+                    <img src="images/dubai/desertSafari.jpg" alt="טיולי ג'יפים במדבר">
+                    <div class="gallery-overlay">
+                        <h3>טיולי ג'יפים</h3>
+                        <p>מדבר</p>
+                    </div>
+                </div>
+                <div class="gallery-item">
+                    <img src="images/dubai/dubaiFrame.jpg" alt="דובאי פריים">
+                    <div class="gallery-overlay">
+                        <h3>דובאי פריים</h3>
+                        <p>מוזיאון</p>
+                    </div>
+                </div>
+                <div class="gallery-item">
+                    <img src="images/dubai/motiongate.jpg" alt="motiongate">
+                    <div class="gallery-overlay">
+                        <h3>motiongate</h3>
+                        <p>לונה פארק</p>
+                    </div>
+                </div>
+        
+                <!-- שורה 3 -->
+                <div class="gallery-item">
+                    <img src="images/dubai/legoland.jpg" alt="לגולנד">
+                    <div class="gallery-overlay">
+                        <h3>לגו לנד</h3>
+                        <p>פארק מים אטרקטיבי</p>
+                    </div>
+                </div>
+                <div class="gallery-item">
+                    <img src="images/dubai/warnerBros.avif" alt="עולם האחים וורנר">
+                    <div class="gallery-overlay">
+                        <h3>עולם האחים וורנר</h3>
+                        <p>אבו דאבי</p>
+                    </div>
+                </div>
+                <div class="gallery-item">
+                    <img src="images/dubai/dubaiMall1.jpg" alt="דובאי מול">
+                    <div class="gallery-overlay">
+                        <h3>דובאי מול</h3>
+                        <p>מרכז קניות</p>
+                    </div>
+                </div>
+                <div class="gallery-item">
+                    <img src="images/dubai/palmIsland.jpg" alt="פאלם איילנד">
+                    <div class="gallery-overlay">
+                        <h3>פאלם איילנד</h3>
+                        <p>דובאי</p>
+                    </div>
+                </div>
+        
+                <!-- שורה 4 -->
+                <div class="gallery-item">
+                    <img src="images/dubai/burjAlArab.jpg" alt="בורג' אל">
+                    <div class="gallery-overlay">
+                        <h3>מלון בורג' אל</h3>
+                        <p>דובאי</p>
                     </div>
                 </div>
             </div>
         </section>
+
 
         <section class="attractions-section">
             <div class="destination-info">
@@ -85,34 +324,70 @@
                 <div class="attractions-grid">
                     <article class="attraction-card">
                         <div class="attraction-image">
-                            <img src="https://www.timeoutdubai.com/cloud/timeoutdubai/2023/05/22/Burj-Khalifa-Dubai.jpg"
-                                alt="בורג' חליפה">
+                            <img src="images/dubai/downtownDubai.jpg" alt="דאון טאון דובאי">
                         </div>
                         <div class="attraction-content">
-                            <h3>בורג' חליפה</h3>
-                            <p>הבניין הגבוה בעולם מציע תצפית מרהיבה מהקומה ה-124 ומסעדות יוקרה. חוויה שאסור להחמיץ!</p>
+                            <h3>דאון טאון דובאי</h3>
+                            <h4>אטרקציות מרכזיות:</h4>
+                            <ul>
+                                <li>בורג' חליפה - המגדל הגבוה בעולם עם מצפור פנורמי</li>
+                                <li>דובאי מול - מרכז הקניות הגדול בעולם</li>
+                                <li>מזרקות דובאי - מופע מים וצלילים מרהיב</li>
+                                <li>דובאי אופרה - מרכז תרבות ואומנות מודרני</li>
+                            </ul>
+                            <h4>מה לעשות?</h4>
+                            <ul>
+                                <li>סיור במצפור At The Top בבורג' חליפה</li>
+                                <li>שופינג במותגי יוקרה בדובאי מול</li>
+                                <li>ארוחה במסעדות גורמה בסוק אל בהר</li>
+                                <li>צפייה במופע המזרקות בשקיעה</li>
+                            </ul>
                         </div>
                     </article>
-
+        
                     <article class="attraction-card">
                         <div class="attraction-image">
-                            <img src="images/dubai/dubaiMall.jpg"
-                                alt="דובאי מול">
+                            <img src="images/dubai/islandDubai.jpg" alt="דקל ג'ומיירה">
                         </div>
                         <div class="attraction-content">
-                            <h3>דובאי מול</h3>
-                            <p>מתחם הקניות הגדול בעולם, כולל אקווריום ענק, מזרקה מוזיקלית ומאות חנויות ומסעדות.</p>
+                            <h3>דקל ג'ומיירה</h3>
+                            <h4>אטרקציות מרכזיות:</h4>
+                            <ul>
+                                <li>אטלנטיס דה פאלם - מלון יוקרתי ופארק מים</li>
+                                <li>אקווריום האבוד - חוויה תת ימית מרהיבה</li>
+                                <li>חוף נסימה - חוף פרטי יוקרתי</li>
+                                <li>The Pointe - טיילת מסעדות ובילויים מול אטלנטיס</li>
+                            </ul>
+                            <h4>פעילויות מומלצות:</h4>
+                            <ul>
+                                <li>שיט במונורייל עם נוף פנורמי לדקל</li>
+                                <li>בילוי בפארק המים אקוואוונצ'ר</li>
+                                <li>צלילה באקווריום האבוד</li>
+                                <li>ארוחת ערב במסעדות היוקרה בנוביו</li>
+                            </ul>
                         </div>
                     </article>
-
+        
                     <article class="attraction-card">
                         <div class="attraction-image">
-                            <img src="https://www.dubaidesertsafarigroup.com/blog/wp-content/uploads/2022/12/Desert-Safari-in-Summer.jpg"
-                                alt="ספארי מדברי">
+                            <img src="images/dubai/oldDubai.jpg" alt="דובאי העתיקה">
                         </div>
                         <div class="attraction-content">
-                            <h3>ספארי מדברי</h3>
-                            <p>הרפתקה בדיונות, כולל רכיבה על גמלים, ארוחת ערב בדואית ומופע ריקודי בטן.</p>
+                            <h3>דובאי העתיקה</h3>
+                            <h4>אתרים היסטוריים:</h4>
+                            <ul>
+                                <li>שוק הזהב - שוק מסורתי של תכשיטים</li>
+                                <li>מוזיאון דובאי - היסטוריה ותרבות במבצר אל פהידי</li>
+                                <li>שוק התבלינים - שוק מסורתי צבעוני וריחני</li>
+                                <li>מסגד ג'ומיירה - המסגד המרכזי והמפואר</li>
+                            </ul>
+                            <h4>חוויות מומלצות:</h4>
+                            <ul>
+                                <li>שיט באברה מסורתית בחור דובאי</li>
+                                <li>סיור בסמטאות שכונת אל פהידי העתיקה</li>
+                                <li>התמקחות בשווקים המסורתיים</li>
+                                <li>ארוחה מסורתית במסעדות המקומיות</li>
+                            </ul>
                         </div>
                     </article>
                 </div>
@@ -133,7 +408,7 @@
    
         <section class="weather-section">
             <div class="destination-info">
-                <h2>מתי כדאי לטייל?</h2>
+                <h2 class="section-title">מתי כדאי לטייל?</h2>
                 <div class="tips-grid">
                     <div class="season-card">
                         <h3><i class="fas fa-sun"></i> חורף (נובמבר-מרץ)</h3>
@@ -154,27 +429,26 @@
             </div>
         </section>
 
-        <!-- טיפים למטייל -->
         <section class="tips-section">
             <div class="destination-info">
                 <h2 class="section-title">טיפים חשובים</h2>
                 <div class="tips-grid">
-                    <div class="attraction-card">
-                        <div class="attraction-content">
+                    <div class="tips-card">
+                        <div class="tips-content">
                             <h3><i class="fas fa-mosque"></i> כללי התנהגות</h3>
                             <p>יש להקפיד על לבוש צנוע במקומות ציבוריים ולכבד את המנהגים המקומיים.</p>
                         </div>
                     </div>
-                    <div class="attraction-card">
-                        <div class="attraction-content">
+                    <div class="tips-card">
+                        <div class="tips-content">
                             <h3><i class="fas fa-subway"></i> תחבורה</h3>
                             <p>הרכבת התחתית יעילה ונוחה. מוניות זולות יחסית וזמינות בכל מקום.</p>
                         </div>
                     </div>
-                    <div class="attraction-card">
-                        <div class="attraction-content">
+                    <div class="tips-card">
+                        <div class="tips-content">
                             <h3><i class="fas fa-credit-card"></i> תשלומים</h3>
-                            <p>רוב המקומות מקבלים כרטיסי אשראי. מומלץ להחזיק גם מזומן לשווקים המסורתיים.</p>
+                            <p>רוב המקומות מקבלים כרטיסי אשראי. מומלץ להחזיק גם מזומן לשווקים.</p>
                         </div>
                     </div>
                 </div>

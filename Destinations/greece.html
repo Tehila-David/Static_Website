@@ -20,9 +20,9 @@
                 <span></span>
             </div>
             <ul class="nav-links">
-                <li><a href="../home-page.html"><i class="fas fa-home"></i> דף הבית</a></li>
+                <li><a href="../home_page.html"><i class="fas fa-home"></i> דף הבית</a></li>
                 <li><a href="../destionations_page.html"><i class="fas fa-map-marked-alt"></i> יעדים</a></li>
-                <li><a href="feed_back.html"><i class="fa-regular fa-comment"></i> חוות דעת</a></li>
+                <li><a href="../feedback.html"><i class="fa-regular fa-comment"></i> חוות דעת</a></li>
                 <li><a href="tips.html"><i class="fas fa-lightbulb"></i> טיפים למטייל</a></li>
                 <li><a href="contact.html" class="cta-button">צור קשר</a></li>
             </ul>
@@ -30,7 +30,6 @@
     </nav>
 
     <main>
-        <!-- Hero Section -->
         <section class="destination-hero" style="background-image: url('https://www.masa.co.il/wp-content/uploads/2017/01/greece.jpg')">
             <div class="hero-overlay"></div>
             <div class="hero-content">
@@ -39,81 +38,398 @@
             </div>
         </section>
 
-        <!-- מידע כללי -->
-        <section class="destination-info">
-            <h2 class="section-title">על יוון</h2>
-            <p>יוון, ערש התרבות המערבית, מציעה שילוב מושלם של היסטוריה עשירה, חופים מרהיבים, אוכל ים תיכוני משובח ואווירה יוונית אותנטית. מהאקרופוליס באתונה ועד האיים הקסומים של הים האגאי, כל רגע ביוון הוא חוויה בלתי נשכחת.</p>
+        <section class="routes-section">
+            <h2 class="section-title">מסלולי טיולים מומלצים ביוון</h2>
+            <div class="routes-grid">
+                <article class="route-card">
+                    <div class="route-image">
+                        <img src="images/greece/cycladesGreece.jpg" alt="האיים הקיקלדיים">
+                    </div>
+                    <div class="route-content">
+                        <div class="route-header">
+                            <h3 class="route-title">האיים הקיקלדיים</h3>
+                        </div>
+                        <span class="route-price">$1,799</span>
+                        <div class="route-details">
+                            <div class="detail-item">
+                                <i class="fas fa-plane-departure"></i>
+                                <span>טיסה: 15/06/24</span>
+                            </div>
+                            <div class="detail-item">
+                                <i class="fas fa-plane-arrival"></i>
+                                <span>חזרה: 22/06/24</span>
+                            </div>
+                            <div class="detail-item">
+                                <i class="fas fa-hotel"></i>
+                                <span>מלונות בוטיק</span>
+                            </div>
+                            <div class="detail-item">
+                                <i class="fas fa-utensils"></i>
+                                <span>חצי פנסיון</span>
+                            </div>
+                        </div>
+                        <p class="route-description">
+                            טיול קסום באיים סנטוריני, מיקונוס ונקסוס. חופים מרהיבים, שקיעות מרהיבות, כפרים ציוריים וחוויות קולינריות.
+                        </p>
+                        <div class="route-highlights">
+                            <span class="highlight-tag">סנטוריני</span>
+                            <span class="highlight-tag">מיקונוס</span>
+                            <span class="highlight-tag">נקסוס</span>
+                            <span class="highlight-tag">שיט איים</span>
+                        </div>
+                        <button onclick="window.location='routes/cyclades-islands.html'" class="route-button">
+                            לפרטים נוספים ולהזמנה
+                        </button>
+                    </div>
+                </article>
+        
+                <article class="route-card">
+                    <div class="route-image">
+                        <img src="images/greece/greece.jpg" alt="יוון הקלאסית">
+                    </div>
+                    <div class="route-content">
+                        <div class="route-header">
+                            <h3 class="route-title">יוון הקלאסית</h3>
+                        </div>
+                        <span class="route-price">$1,599</span>
+                        <div class="route-details">
+                            <div class="detail-item">
+                                <i class="fas fa-plane-departure"></i>
+                                <span>טיסה: 10/07/24</span>
+                            </div>
+                            <div class="detail-item">
+                                <i class="fas fa-plane-arrival"></i>
+                                <span>חזרה: 17/07/24</span>
+                            </div>
+                            <div class="detail-item">
+                                <i class="fas fa-hotel"></i>
+                                <span>מלונות: 4 כוכבים</span>
+                            </div>
+                            <div class="detail-item">
+                                <i class="fas fa-utensils"></i>
+                                <span>חצי פנסיון</span>
+                            </div>
+                        </div>
+                        <p class="route-description">
+                            מסע בזמן אל יוון העתיקה. ביקור באתרים היסטוריים באתונה, דלפי ואולימפיה. סיורים מודרכים באתרים ארכיאולוגיים.
+                        </p>
+                        <div class="route-highlights">
+                            <span class="highlight-tag">אקרופוליס</span>
+                            <span class="highlight-tag">דלפי</span>
+                            <span class="highlight-tag">אולימפיה</span>
+                            <span class="highlight-tag">מיקנה</span>
+                        </div>
+                        <button onclick="window.location='routes/classical-greece.html'" class="route-button">
+                            לפרטים נוספים ולהזמנה
+                        </button>
+                    </div>
+                </article>
+        
+                <article class="route-card">
+                    <div class="route-image">
+                        <img src="images/greece/crete.jpg" alt="כרתים">
+                    </div>
+                    <div class="route-content">
+                        <div class="route-header">
+                            <h3 class="route-title">כרתים המופלאה</h3>
+                        </div>
+                        <span class="route-price">$1,399</span>
+                        <div class="route-details">
+                            <div class="detail-item">
+                                <i class="fas fa-plane-departure"></i>
+                                <span>טיסה: 05/08/24</span>
+                            </div>
+                            <div class="detail-item">
+                                <i class="fas fa-plane-arrival"></i>
+                                <span>חזרה: 12/08/24</span>
+                            </div>
+                            <div class="detail-item">
+                                <i class="fas fa-hotel"></i>
+                                <span>מלונות: 5 כוכבים</span>
+                            </div>
+                            <div class="detail-item">
+                                <i class="fas fa-utensils"></i>
+                                <span>חצי פנסיון</span>
+                            </div>
+                        </div>
+                        <p class="route-description">
+                            טיול באי הגדול ביותר ביוון. חופים מרהיבים, היסטוריה עשירה, טברנות מסורתיות וטיולי טבע מרהיבים.
+                        </p>
+                        <div class="route-highlights">
+                            <span class="highlight-tag">ארמון קנוסוס</span>
+                            <span class="highlight-tag">חניה</span>
+                            <span class="highlight-tag">רתימנו</span>
+                            <span class="highlight-tag">קניון סמריה</span>
+                        </div>
+                        <button onclick="window.location='routes/crete-adventure.html'" class="route-button">
+                            לפרטים נוספים ולהזמנה
+                        </button>
+                    </div>
+                </article>
+        
+                <article class="route-card">
+                    <div class="route-image">
+                        <img src="images/greece/northGreece.jpg" alt="צפון יוון">
+                    </div>
+                    <div class="route-content">
+                        <div class="route-header">
+                            <h3 class="route-title">צפון יוון הקסום</h3>
+                        </div>
+                        <span class="route-price">$1,499</span>
+                        <div class="route-details">
+                            <div class="detail-item">
+                                <i class="fas fa-plane-departure"></i>
+                                <span>טיסה: 20/09/24</span>
+                            </div>
+                            <div class="detail-item">
+                                <i class="fas fa-plane-arrival"></i>
+                                <span>חזרה: 27/09/24</span>
+                            </div>
+                            <div class="detail-item">
+                                <i class="fas fa-hotel"></i>
+                                <span>מלונות: 4 כוכבים</span>
+                            </div>
+                            <div class="detail-item">
+                                <i class="fas fa-utensils"></i>
+                                <span>פנסיון מלא</span>
+                            </div>
+                        </div>
+                        <p class="route-description">
+                            גילוי אזורים פחות מתוירים בצפון יוון. מנזרי מטאורה המרחפים, סלוניקי העתיקה והרי פינדוס המרשימים.
+                        </p>
+                        <div class="route-highlights">
+                            <span class="highlight-tag">מטאורה</span>
+                            <span class="highlight-tag">סלוניקי</span>
+                            <span class="highlight-tag">הרי פינדוס</span>
+                            <span class="highlight-tag">זגוריה</span>
+                        </div>
+                        <button onclick="window.location='routes/northern-greece.html'" class="route-button">
+                            לפרטים נוספים ולהזמנה
+                        </button>
+                    </div>
+                </article>
+        
+                <article class="route-card">
+                    <div class="route-image">
+                        <img src="images/greece/peloponnese.jpg" alt="חצי האי פלופונז">
+                    </div>
+                    <div class="route-content">
+                        <div class="route-header">
+                            <h3 class="route-title">חצי האי פלופונז</h3>
+                        </div>
+                        <span class="route-price">$1,699</span>
+                        <div class="route-details">
+                            <div class="detail-item">
+                                <i class="fas fa-plane-departure"></i>
+                                <span>טיסה: 10/10/24</span>
+                            </div>
+                            <div class="detail-item">
+                                <i class="fas fa-plane-arrival"></i>
+                                <span>חזרה: 17/10/24</span>
+                            </div>
+                            <div class="detail-item">
+                                <i class="fas fa-hotel"></i>
+                                <span>מלונות בוטיק</span>
+                            </div>
+                            <div class="detail-item">
+                                <i class="fas fa-utensils"></i>
+                                <span>חצי פנסיון</span>
+                            </div>
+                        </div>
+                        <p class="route-description">
+                            מסע בחצי האי המרתק של יוון. שילוב של חופים, אתרים היסטוריים, כפרים ציוריים ונופים מרהיבים.
+                        </p>
+                        <div class="route-highlights">
+                            <span class="highlight-tag">נאפפליו</span>
+                            <span class="highlight-tag">מיסטרה</span>
+                            <span class="highlight-tag">מונמבסיה</span>
+                            <span class="highlight-tag">קרדמילי</span>
+                        </div>
+                        <button onclick="window.location='routes/peloponnese-discovery.html'" class="route-button">
+                            לפרטים נוספים ולהזמנה
+                        </button>
+                    </div>
+                </article>
+            </div>
         </section>
-
-        <!-- גלריית תמונות -->
+        
         <section class="gallery-section">
-            <div class="destination-info">
-                <h2 class="section-title">גלריית תמונות</h2>
-                <div class="gallery-grid">
-                    <div class="gallery-item">
-                        <img src="https://www.travelandleisure.com/thmb/r-Rh_n81QrPBHL9YIVBzxzS7kMY=/1500x0/filters:no_upscale():max_bytes(150000):strip_icc()/santorini-greece-BLUESANTORINISLIDER0722-4a5fd420ca074862b509f6cd45aa4c6f.jpg" alt="סנטוריני">
-                        <div class="gallery-overlay">
-                            <h3>סנטוריני</h3>
-                            <p>האי הקסום ביותר ביוון</p>
-                        </div>
-                    </div>
-                    <div class="gallery-item">
-                        <img src="https://upload.wikimedia.org/wikipedia/commons/c/c8/Acropolis_from_southwest.jpg" alt="האקרופוליס">
-                        <div class="gallery-overlay">
-                            <h3>האקרופוליס</h3>
-                            <p>סמלה ההיסטורי של אתונה</p>
-                        </div>
-                    </div>
-                    <div class="gallery-item">
-                        <img src="https://www.greece-is.com/wp-content/uploads/2016/05/Mykonos_Little_Venice_02.jpg" alt="מיקונוס">
-                        <div class="gallery-overlay">
-                            <h3>מיקונוס</h3>
-                            <p>ונציה הקטנה במיקונוס</p>
-                        </div>
+            <h2 class="section-title">גלריית תמונות</h2>
+            <div class="gallery-grid">
+                <!-- שורה 1 -->
+                <div class="gallery-item">
+                    <img src="images/greece/santorini.jpg" alt="סנטוריני">
+                    <div class="gallery-overlay">
+                        <h3>סנטוריני</h3>
+                        <p>האי הקסום ביותר ביוון</p>
                     </div>
                 </div>
+                    <div class="gallery-item">
+                        <img src="images/greece/acropolis.jpg" alt="האקרופוליס">
+                        <div class="gallery-overlay">
+                            <h3>האקרופוליס</h3>
+                            <p>אתונה</p>
+                        </div>
+                    </div>
+            
+                    <div class="gallery-item">
+                        <img src="images/greece/food.jpg" alt="אוכל יווני">
+                        <div class="gallery-overlay">
+                            <h3>מטעמים יווניים</h3>
+                            <p>קולינריה מסורתית</p>
+                        </div>
+                    </div>
+
+                    <div class="gallery-item">
+                        <img src="images/greece/oia.jpg" alt="סנטוריני">
+                        <div class="gallery-overlay">
+                            <h3>הכפר אויה</h3>
+                            <p>סנטוריני</p>
+                        </div>
+                    </div>
+            
+                    <div class="gallery-item">
+                        <img src="images/greece/meteora.jpg" alt="מטאורה">
+                        <div class="gallery-overlay">
+                            <h3>מנזרי מטאורה</h3>
+                            <p>צפון יוון</p>
+                        </div>
+                    </div>
+            
+                    <div class="gallery-item">
+                        <img src="images/greece/mykonos.jpg" alt="מיקונוס">
+                        <div class="gallery-overlay">
+                            <h3>טחנות הרוח</h3>
+                            <p>מיקונוס</p>
+                        </div>
+                    </div>
+            
+                    <div class="gallery-item">
+                        <img src="images/greece/zakynthos.jpg" alt="זקינטוס">
+                        <div class="gallery-overlay">
+                            <h3>חוף הספינה הטרופה</h3>
+                            <p>זקינטוס</p>
+                        </div>
+                    </div>
+            
+                    <div class="gallery-item">
+                        <img src="images/greece/crete1.jpg" alt="כרתים">
+                        <div class="gallery-overlay">
+                            <h3>ארמון קנוסוס</h3>
+                            <p>כרתים</p>
+                        </div>
+                    </div>
+            
+                    <div class="gallery-item">
+                        <img src="images/greece/delphi.jpg" alt="דלפי">
+                        <div class="gallery-overlay">
+                            <h3>אורקל דלפי</h3>
+                            <p>דלפי העתיקה</p>
+                        </div>
+                    </div>
+            
+                    <div class="gallery-item">
+                        <img src="images/greece/monemvasia.jpg" alt="מונמבסיה">
+                        <div class="gallery-overlay">
+                            <h3>המצודה העתיקה</h3>
+                            <p>מונמבסיה</p>
+                        </div>
+                    </div>
+            
+                    <div class="gallery-item">
+                        <img src="images/greece/olympia.jpg" alt="אולימפיה">
+                        <div class="gallery-overlay">
+                            <h3>אתר אולימפיה</h3>
+                            <p>פלופונז</p>
+                        </div>
+                    </div>
+            
+                    <div class="gallery-item">
+                        <img src="images/greece/theater.jpg" alt="תיאטרון עתיק">
+                        <div class="gallery-overlay">
+                            <h3>תיאטרון אפידאורוס</h3>
+                            <p>פלופונז</p>
+                        </div>
+                    </div>
             </div>
         </section>
 
-        <!-- אטרקציות מובילות -->
         <section class="attractions-section">
             <div class="destination-info">
                 <h2 class="section-title">אטרקציות מובילות</h2>
                 <div class="attractions-grid">
                     <article class="attraction-card">
                         <div class="attraction-image">
-                            <img src="https://www.visitgreece.gr/images/1743x752/14376-mykonos.jpg" alt="מיקונוס">
-                        </div>
-                        <div class="attraction-content">
-                            <h3>מיקונוס</h3>
-                            <p>אי הבילויים המפורסם, עם חופים מדהימים, טחנות רוח היסטוריות וחיי לילה תוססים.</p>
-                        </div>
-                    </article>
-
-                    <article class="attraction-card">
-                        <div class="attraction-image">
-                            <img src="https://greektraveltellers.com/wp-content/uploads/2023/04/Santorini-Greece.jpg" alt="סנטוריני">
-                        </div>
-                        <div class="attraction-content">
-                            <h3>סנטוריני</h3>
-                            <p>האי הרומנטי ביותר ביוון, ידוע בבתיו הלבנים, שקיעות מרהיבות וכפרים ציוריים.</p>
-                        </div>
-                    </article>
-
-                    <article class="attraction-card">
-                        <div class="attraction-image">
-                            <img src="https://www.athensguide.com/assets/photos/acropolis/acropolis-at-night.jpg" alt="אתונה">
+                            <img src="images/greece/athens.jpg" alt="אתונה">
                         </div>
                         <div class="attraction-content">
                             <h3>אתונה</h3>
-                            <p>עיר הבירה העתיקה, בית לאקרופוליס המפורסם, מוזיאונים עשירים ושווקים תוססים.</p>
+                            <h4>אתרים היסטוריים:</h4>
+                            <ul>
+                                <li>האקרופוליס - מתחם המקדשים העתיק כולל הפרתנון המפורסם</li>
+                                <li>אגורה העתיקה - המרכז הציבורי של אתונה הקלאסית</li>
+                                <li>מוזיאון האקרופוליס - אוצרות עתיקים ופסלים מרהיבים</li>
+                                <li>רובע פלאקה - הרובע העתיק והציורי של העיר</li>
+                            </ul>
+                            <h4>מה לעשות?</h4>
+                            <ul>
+                                <li>סיור מודרך באקרופוליס ובמוזיאון</li>
+                                <li>שוטטות בסמטאות פלאקה וטעימת מאכלים מקומיים</li>
+                                <li>ביקור בשוק מונסטיראקי הצבעוני</li>
+                                <li>צפייה בטקס חילופי המשמרות בכיכר סינטגמה</li>
+                            </ul>
+                        </div>
+                    </article>
+        
+                    <article class="attraction-card">
+                        <div class="attraction-image">
+                            <img src="images/greece/santorini1.jpg" alt="סנטוריני">
+                        </div>
+                        <div class="attraction-content">
+                            <h3>סנטוריני</h3>
+                            <h4>אטרקציות מרכזיות:</h4>
+                            <ul>
+                                <li>העיירה אויה - הכפר הלבן המפורסם עם נוף השקיעה המדהים</li>
+                                <li>פירה - עיר הבירה של האי עם נוף לקלדרה</li>
+                                <li>חופי הלבה השחורים - חוויה ייחודית של חופים וולקניים</li>
+                                <li>עתיקות אקרוטירי - "פומפיי היוונית" העתיקה</li>
+                            </ul>
+                            <h4>חוויות מומלצות:</h4>
+                            <ul>
+                                <li>שיט בקלדרה וביקור באיים הוולקניים</li>
+                                <li>טעימות יין ביקבים המקומיים</li>
+                                <li>צפייה בשקיעה המפורסמת מאויה</li>
+                                <li>סיור בכפרים המסורתיים של האי</li>
+                            </ul>
+                        </div>
+                    </article>
+        
+                    <article class="attraction-card">
+                        <div class="attraction-image">
+                            <img src="images/greece/meteora.jpg" alt="מטאורה">
+                        </div>
+                        <div class="attraction-content">
+                            <h3>מטאורה</h3>
+                            <h4>אתרי מורשת:</h4>
+                            <ul>
+                                <li>מנזר מגה מטאורון - המנזר הגדול והמרשים ביותר</li>
+                                <li>מנזר וארלאם - מבנה מרהיב על צוק תלול</li>
+                                <li>מנזר רוסאנו - מנזר נשים עם פרסקאות עתיקות</li>
+                                <li>נקודות תצפית - נופים פנורמיים מרהיבים</li>
+                            </ul>
+                            <h4>פעילויות מומלצות:</h4>
+                            <ul>
+                                <li>סיורים מודרכים במנזרים השונים</li>
+                                <li>טיפוס וטרקים בין הצוקים</li>
+                                <li>צפייה בזריחה ושקיעה מנקודות תצפית</li>
+                                <li>ביקור במוזיאון ההיסטורי של מטאורה</li>
+                            </ul>
                         </div>
                     </article>
                 </div>
             </div>
         </section>
 
-        <!-- מפה -->
         <section class="map-section">
             <div class="map-container">
                 <h2 class="section-title">מיקומי האטרקציות המרכזיות</h2>
@@ -124,11 +440,10 @@
             </div>
         </section>
 
-        <!-- עונות ומזג אוויר -->
         <section class="weather-section">
             <div class="destination-info">
-                <h2>מתי כדאי לטייל?</h2>
-                <div class="attractions-grid">
+                <h2 class="section-title">מתי כדאי לטייל?</h2>
+                <div class="tips-grid">
                     <div class="season-card">
                         <h3><i class="fas fa-sun"></i> קיץ</h3>
                         <p>יוני עד ספטמבר</p>
@@ -147,66 +462,27 @@
                 </div>
             </div>
         </section>
-        <!-- טיפים למטייל -->
+        
         <section class="tips-section">
             <div class="destination-info">
                 <h2 class="section-title">טיפים חשובים</h2>
-                <div class="attractions-grid">
-                    <div class="attraction-card">
-                        <div class="attraction-content">
+                <div class="tips-grid">
+                    <div class="tips-card">
+                        <div class="tips-content">
                             <h3><i class="fas fa-ship"></i> תחבורה באיים</h3>
                             <p>הזמינו כרטיסי מעבורת מראש בעונת השיא. שקלו טיסות פנים בין איים רחוקים.</p>
                         </div>
                     </div>
-                    <div class="attraction-card">
-                        <div class="attraction-content">
+                    <div class="tips-card">
+                        <div class="tips-content">
                             <h3><i class="fas fa-utensils"></i> אוכל מקומי</h3>
-                            <p>נסו טברנות מקומיות לאוכל אותנטי. הארוחות מוגשות מאוחר יחסית לשעות הישראליות.</p>
+                            <p>נסו טברנות מקומיות לאוכל אותנטי. הארוחות מוגשות בשעה מאוחרת  .</p>
                         </div>
                     </div>
-                    <div class="attraction-card">
-                        <div class="attraction-content">
+                    <div class="tips-card">
+                        <div class="tips-content">
                             <h3><i class="fas fa-euro-sign"></i> תקציב</h3>
                             <p>האיים יקרים יותר מהיבשת. הזמינו מקומות לינה מראש בעונת השיא.</p>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </section>
-
-        <!-- מידע נוסף -->
-        <section class="additional-info">
-            <div class="destination-info">
-                <h2 class="section-title">חוויות מומלצות</h2>
-                <div class="attractions-grid">
-                    <div class="attraction-card">
-                        <div class="attraction-content">
-                            <h3><i class="fas fa-umbrella-beach"></i> חופים מומלצים</h3>
-                            <ul style="list-style: none; padding: 0;">
-                                <li>• חוף נוואג'יו בזקינטוס</li>
-                                <li>• חוף אדום בסנטוריני</li>
-                                <li>• חוף פרדייס במיקונוס</li>
-                            </ul>
-                        </div>
-                    </div>
-                    <div class="attraction-card">
-                        <div class="attraction-content">
-                            <h3><i class="fas fa-camera"></i> נקודות צילום</h3>
-                            <ul style="list-style: none; padding: 0;">
-                                <li>• שקיעה באויה סנטוריני</li>
-                                <li>• טחנות הרוח במיקונוס</li>
-                                <li>• האקרופוליס בשקיעה</li>
-                            </ul>
-                        </div>
-                    </div>
-                    <div class="attraction-card">
-                        <div class="attraction-content">
-                            <h3><i class="fas fa-glass-cheers"></i> פסטיבלים</h3>
-                            <ul style="list-style: none; padding: 0;">
-                                <li>• פסטיבל אתונה - יוני עד ספטמבר</li>
-                                <li>• חגיגות פסחא ביוון</li>
-                                <li>• פסטיבל היין בסנטוריני</li>
-                            </ul>
                         </div>
                     </div>
                 </div>
@@ -245,7 +521,6 @@
         </div>
     </footer>
 
-    <!-- כפתור חזרה למעלה -->
     <button class="scroll-to-top">
         <i class="fas fa-arrow-up"></i>
     </button>
