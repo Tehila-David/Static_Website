@@ -1,10 +1,12 @@
 /* styles.css */
+
+/* General */
 :root {
     --primary-color: #2196f5;
     --secondary-color: #f50057;
     --text-color: #333;
     --background-color: #f8f9fa;
-    --card-shadow: 0 10px 20px rgba(0,0,0,0.1);
+    --card-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
     --transition-speed: 0.3s;
 }
 
@@ -27,15 +29,13 @@ body {
     width: 100%;
     top: 0;
     z-index: 1000;
-    background: rgba(255, 255, 255, 0.95);
-    backdrop-filter: blur(10px);
-    box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+    background: rgba(255, 255, 255, 0.90);
 }
 
 .nav-content {
-    max-width: 1200px;
+    max-width: 1250px;
     margin: 0 auto;
-    padding: 1rem;
+    padding: 25px;
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -44,7 +44,7 @@ body {
 .logo {
     display: flex;
     align-items: center;
-    gap: 1rem;
+    gap: 15px;
 }
 
 .globe-icon {
@@ -86,13 +86,14 @@ body {
     background: var(--secondary-color) !important;
 }
 
+/*Main Styles */
 .hero {
     position: relative;
     height: 100vh;
     min-height: 750px;
     overflow: hidden;
     direction: rtl;
-    
+
 }
 
 .hero-background-slider {
@@ -130,11 +131,9 @@ body {
     left: 0;
     width: 100%;
     height: 100%;
-    background: linear-gradient(
-        to bottom,
-        rgba(0, 0, 0, 0.5),
-        rgba(0, 0, 0, 0.7)
-    );
+    background: linear-gradient(to bottom,
+            rgba(0, 0, 0, 0.5),
+            rgba(0, 0, 0, 0.7));
 }
 
 .hero-content {
@@ -168,85 +167,7 @@ body {
     animation: fadeInUp 1s forwards 0.3s;
 }
 
-.search-container {
-    width: 100%;
-    max-width: 800px;
-    margin-bottom: 3rem;
-    opacity: 0;
-    animation: fadeInUp 1s forwards 0.6s;
-}
 
-.search-box {
-    background: rgba(255, 255, 255, 0.95);
-    border-radius: 15px;
-    padding: 1.5rem;
-    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.2);
-}
-
-.search-icon {
-    color: var(--primary-color);
-    margin-left: 1rem;
-    font-size: 1.2rem;
-}
-
-.search-input {
-    width: calc(100% - 3rem);
-    padding: 1rem;
-    border: none;
-    background: transparent;
-    font-size: 1.1rem;
-    color: #333;
-}
-
-.search-input::placeholder {
-    color: #666;
-}
-
-.search-categories {
-    display: flex;
-    gap: 1rem;
-    margin-top: 1rem;
-    padding-top: 1rem;
-    border-top: 1px solid rgba(0, 0, 0, 0.1);
-}
-
-.category-btn {
-    padding: 0.5rem 1rem;
-    border: none;
-    border-radius: 25px;
-    background: transparent;
-    color: #666;
-    cursor: pointer;
-    transition: all 0.3s ease;
-}
-
-.category-btn.active,
-.category-btn:hover {
-    background: var(--primary-color);
-    color: white;
-}
-
-.search-button {
-    width: 100%;
-    margin-top: 1rem;
-    padding: 1rem 2rem;
-    border: none;
-    border-radius: 10px;
-    background: var(--primary-color);
-    color: white;
-    font-size: 1.1rem;
-    cursor: pointer;
-    transition: all 0.3s ease;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    gap: 0.5rem;
-}
-
-.search-button:hover {
-    background: #1976d2;
-    transform: translateY(-2px);
-}
 
 .hero-stats {
     display: flex;
@@ -274,11 +195,16 @@ body {
 }
 
 @keyframes slideShow {
-    0%, 30%, 100% {
+
+    0%,
+    30%,
+    100% {
         opacity: 0;
         transform: scale(1.1);
     }
-    10%, 20% {
+
+    10%,
+    20% {
         opacity: 1;
         transform: scale(1);
     }
@@ -289,6 +215,7 @@ body {
         opacity: 0;
         transform: translateY(30px);
     }
+
     to {
         opacity: 1;
         transform: translateY(0);
@@ -299,16 +226,16 @@ body {
     .hero-title {
         font-size: 2.5rem;
     }
-    
+
     .hero-subtitle {
         font-size: 1.2rem;
     }
-    
+
     .hero-stats {
         flex-direction: column;
         gap: 2rem;
     }
-    
+
     .search-categories {
         flex-wrap: wrap;
         justify-content: center;
@@ -367,7 +294,7 @@ body {
     left: 0;
     right: 0;
     bottom: 0;
-    background: linear-gradient(to top, rgba(0,0,0,0.7), transparent);
+    background: linear-gradient(to top, rgba(0, 0, 0, 0.7), transparent);
     opacity: 0;
     transition: opacity var(--transition-speed);
 }
@@ -448,6 +375,7 @@ body {
     font-size: 2.5rem;
     margin-bottom: 1rem;
 }
+
 /* Footer */
 footer {
     background: #1a237e;
@@ -475,8 +403,9 @@ footer {
     text-align: center;
     margin-top: 2rem;
     padding-top: 1rem;
-    border-top: 1px solid rgba(255,255,255,0.1);
+    border-top: 1px solid rgba(255, 255, 255, 0.1);
 }
+
 .footer-section h3 {
     margin-bottom: 1.5rem;
     font-size: 1.2rem;
@@ -563,6 +492,7 @@ footer {
         opacity: 0;
         transform: translateY(20px);
     }
+
     to {
         opacity: 1;
         transform: translateY(0);
@@ -573,31 +503,15 @@ footer {
     from {
         transform: rotate(0deg);
     }
+
     to {
         transform: rotate(360deg);
     }
 }
 
-/* Hamburger Menu for Mobile */
-.hamburger {
-    display: none;
-    flex-direction: column;
-    gap: 6px;
-    cursor: pointer;
-}
-
-.hamburger span {
-    width: 30px;
-    height: 3px;
-    background: var(--text-color);
-    transition: var(--transition-speed);
-}
 
 /* Responsive Design */
 @media screen and (max-width: 768px) {
-    .hamburger {
-        display: flex;
-    }
 
     .nav-links {
         position: fixed;
@@ -618,16 +532,6 @@ footer {
 
     .hero {
         height: 60vh;
-    }
-
-    .search-container {
-        flex-direction: column;
-        padding: 0 1rem;
-    }
-
-    .search-button {
-        width: 100%;
-        border-radius: 25px;
     }
 
     .experience-grid {
@@ -673,8 +577,13 @@ footer {
 }
 
 @keyframes spin {
-    0% { transform: rotate(0deg); }
-    100% { transform: rotate(360deg); }
+    0% {
+        transform: rotate(0deg);
+    }
+
+    100% {
+        transform: rotate(360deg);
+    }
 }
 
 /* Hover Effects */
@@ -715,7 +624,7 @@ footer {
     opacity: 0;
     visibility: hidden;
     transition: all var(--transition-speed);
-    box-shadow: 0 2px 10px rgba(0,0,0,0.2);
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.2);
 }
 
 .scroll-top.visible {
@@ -777,61 +686,10 @@ footer {
     background-size: cover;
     background-position: center;
     position: relative;
-    margin-top: 70px; /* מרווח עבור התפריט הקבוע */
+    margin-top: 70px;
+    /* מרווח עבור התפריט הקבוע */
 }
 
-/* גלריית תמונות */
-/*.gallery-section {
-    padding: 4rem 0;
-    background: var(--background-color);
-}
-
-.gallery-grid {
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-    gap: 1.5rem;
-    padding: 2rem;
-    max-width: 1200px;
-    margin: 0 auto;
-}
-
-.gallery-item {
-    position: relative;
-    border-radius: 10px;
-    overflow: hidden;
-    aspect-ratio: 3/2;
-    cursor: pointer;
-}
-
-.gallery-item img {
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
-    transition: transform var(--transition-speed);
-}
-
-.gallery-item:hover img {
-    transform: scale(1.1);
-}
-
-.gallery-overlay {
-    position: absolute;
-    top: 0;
-    left: 0;
-    right: 0;
-    bottom: 0;
-    background: linear-gradient(to top, rgba(0,0,0,0.7), transparent);
-    opacity: 0;
-    transition: opacity var(--transition-speed);
-    display: flex;
-    align-items: flex-end;
-    padding: 1.5rem;
-    color: white;
-}
-
-.gallery-item:hover .gallery-overlay {
-    opacity: 1;
-}*/
 .gallery-grid {
     display: grid;
     grid-template-columns: repeat(4, 1fr);
@@ -841,7 +699,7 @@ footer {
     margin: 0 auto;
     background: white;
     border-radius: 15px;
-    box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
 }
 
 .gallery-item {
@@ -866,11 +724,9 @@ footer {
 .gallery-overlay {
     position: absolute;
     inset: 0;
-    background: linear-gradient(
-        0deg,
-        rgba(0, 0, 0, 0.7) 0%,
-        rgba(0, 0, 0, 0) 50%
-    );
+    background: linear-gradient(0deg,
+            rgba(0, 0, 0, 0.7) 0%,
+            rgba(0, 0, 0, 0) 50%);
     display: flex;
     flex-direction: column;
     justify-content: flex-end;
@@ -971,11 +827,11 @@ footer {
     bottom: 0;
     left: 0;
     right: 0;
-    background: linear-gradient(to top, 
-        rgba(0,0,0,0.95) 0%,
-        rgba(0,0,0,0.8) 40%,
-        rgba(0,0,0,0.4) 70%,
-        transparent 100%);
+    background: linear-gradient(to top,
+            rgba(0, 0, 0, 0.95) 0%,
+            rgba(0, 0, 0, 0.8) 40%,
+            rgba(0, 0, 0, 0.4) 70%,
+            transparent 100%);
     color: white;
     padding: 2rem;
     transform: translateY(calc(100% - 80px));
@@ -992,7 +848,7 @@ footer {
     margin-bottom: 0.5rem;
     color: white;
     font-weight: 600;
-    text-shadow: 2px 2px 4px rgba(0,0,0,0.5);
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
     border-bottom: 2px solid var(--primary-color);
     padding-bottom: 0.3rem;
     display: inline-block;
@@ -1065,15 +921,15 @@ footer {
     .attraction-content h3 {
         font-size: 1.5rem;
     }
-    
+
     .attraction-content p {
         font-size: 0.95rem;
     }
-    
+
     .attraction-content h4 {
         font-size: 1rem;
     }
-    
+
     .attraction-content li {
         font-size: 0.9rem;
     }
@@ -1086,7 +942,8 @@ footer {
     gap: 2rem;
     margin-top: 0rem;
     padding-bottom: 5rem;
-    justify-items: center; /* מרכז את התוכן בציר האופקי */
+    justify-items: center;
+    /* מרכז את התוכן בציר האופקי */
     align-items: center;
     margin: 2rem;
 }
@@ -1186,7 +1043,7 @@ footer {
     .map-frame {
         height: 300px;
     }
-    
+
 }
 
 .routes-grid {
@@ -1202,11 +1059,14 @@ footer {
     background: white;
     border-radius: 15px;
     overflow: hidden;
-    box-shadow: 0 4px 15px rgba(0,0,0,0.1);
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
     transition: transform 0.3s ease;
-    display: flex; /* הפוך את הכרטיס ל-flex container */
-    flex-direction: column; /* הצג את כל התוכן בעמודה */
-    height: 100%; /* הגדר גובה מלא כדי שהכפתור יוכל להימצא בתחתית */
+    display: flex;
+    /* הפוך את הכרטיס ל-flex container */
+    flex-direction: column;
+    /* הצג את כל התוכן בעמודה */
+    height: 100%;
+    /* הגדר גובה מלא כדי שהכפתור יוכל להימצא בתחתית */
 }
 
 .route-card:hover {
@@ -1236,7 +1096,7 @@ footer {
     left: 0;
     right: 0;
     bottom: 0;
-    background: linear-gradient(to bottom, rgba(0,0,0,0.2), rgba(0,0,0,0.6));
+    background: linear-gradient(to bottom, rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.6));
     display: flex;
     justify-content: space-between;
     padding: 1rem;
@@ -1248,7 +1108,7 @@ footer {
 }
 
 .route-badge {
-    background: rgba(255,255,255,0.9);
+    background: rgba(255, 255, 255, 0.9);
     color: var(--primary-color);
     padding: 0.3rem 0.8rem;
     border-radius: 20px;
@@ -1261,8 +1121,10 @@ footer {
 .route-content {
     padding: 1.5rem;
     display: flex;
-    flex-direction: column; /* הצג את התוכן בעמודה */
-    flex-grow: 1; /* זה מאפשר לתוכן לתפוס את כל השטח הפנוי */
+    flex-direction: column;
+    /* הצג את התוכן בעמודה */
+    flex-grow: 1;
+    /* זה מאפשר לתוכן לתפוס את כל השטח הפנוי */
 }
 
 .route-header {
@@ -1322,7 +1184,8 @@ footer {
 
 
 .route-button {
-    width: 100%; /* כפתור ברוחב מלא */
+    width: 100%;
+    /* כפתור ברוחב מלא */
     padding: 1rem;
     background: var(--primary-color);
     color: white;
@@ -1331,7 +1194,8 @@ footer {
     font-size: 1rem;
     cursor: pointer;
     transition: background 0.3s ease;
-    margin-top: auto; /* דוחף את הכפתור לתחתית */
+    margin-top: auto;
+    /* דוחף את הכפתור לתחתית */
 }
 
 .route-button:hover {
@@ -1494,7 +1358,7 @@ footer {
     .reviews-grid {
         grid-template-columns: 1fr;
     }
-    
+
     .filter-buttons {
         flex-wrap: wrap;
     }
@@ -1580,7 +1444,7 @@ footer {
         grid-template-columns: 1fr;
         gap: 1rem;
     }
-    
+
     .day-item {
         padding-right: 1rem;
     }
@@ -1615,25 +1479,29 @@ footer {
     gap: 2rem;
 }
 
-.flight-details, .hotel-details {
+.flight-details,
+.hotel-details {
     background: var(--background-color);
     border-radius: 10px;
     padding: 2rem;
 }
 
-.flight-group, .hotel-group {
+.flight-group,
+.hotel-group {
     background: white;
     border-radius: 8px;
     padding: 1.5rem;
     margin-bottom: 1.5rem;
-    box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
 }
 
-.flight-group:last-child, .hotel-group:last-child {
+.flight-group:last-child,
+.hotel-group:last-child {
     margin-bottom: 0;
 }
 
-.flight-info, .hotel-info {
+.flight-info,
+.hotel-info {
     display: grid;
     gap: 1rem;
     margin-top: 1rem;
@@ -1666,11 +1534,14 @@ footer {
 }
 
 @media screen and (max-width: 768px) {
-    .flight-details, .hotel-details {
+
+    .flight-details,
+    .hotel-details {
         padding: 1rem;
     }
 
-    .flight-group, .hotel-group {
+    .flight-group,
+    .hotel-group {
         padding: 1rem;
     }
 
@@ -1713,7 +1584,7 @@ footer {
     background: white;
     padding: 1.5rem;
     border-radius: 10px;
-    box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
 }
 
 .form-section.full-width {
@@ -1805,4 +1676,3 @@ footer {
         grid-template-columns: 1fr;
     }
 }
-

@@ -1,0 +1,165 @@
+/* Styles only for destionations_page */
+
+/*dest card -section styles*/
+.routes-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 2rem;
+    padding: 2rem;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.route-card {
+    background: white;
+    border-radius: 15px;
+    overflow: hidden;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease;
+    display: flex;
+    /* הפוך את הכרטיס ל-flex container */
+    flex-direction: column;
+    /* הצג את כל התוכן בעמודה */
+    height: 100%;
+    /* הגדר גובה מלא כדי שהכפתור יוכל להימצא בתחתית */
+}
+
+.route-card:hover {
+    transform: translateY(-5px);
+}
+
+.route-image {
+    position: relative;
+    height: 200px;
+    overflow: hidden;
+}
+
+.route-image img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transition: transform 0.3s ease;
+}
+
+.route-card:hover .route-image img {
+    transform: scale(1.1);
+}
+
+.route-overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: linear-gradient(to bottom, rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.6));
+    display: flex;
+    justify-content: space-between;
+    padding: 1rem;
+}
+
+.route-badges {
+    display: flex;
+    gap: 0.5rem;
+}
+
+.route-badge {
+    background: rgba(255, 255, 255, 0.9);
+    color: var(--primary-color);
+    padding: 0.3rem 0.8rem;
+    border-radius: 20px;
+    font-size: 0.8rem;
+    display: flex;
+    align-items: center;
+    gap: 0.3rem;
+}
+
+.route-content {
+    padding: 1.5rem;
+    display: flex;
+    flex-direction: column;
+    /* הצג את התוכן בעמודה */
+    flex-grow: 1;
+    /* זה מאפשר לתוכן לתפוס את כל השטח הפנוי */
+}
+
+.route-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 1rem;
+}
+
+.route-title {
+    font-size: 1.5rem;
+    font-weight: 600;
+    color: var(--text-color);
+}
+
+.route-price {
+    font-size: 1.3rem;
+    font-weight: 600;
+    color: var(--primary-color);
+}
+
+.route-details {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 1rem;
+    margin: 1rem 0;
+}
+
+.detail-item {
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+    color: #666;
+    font-size: 0.9rem;
+}
+
+.route-description {
+    margin: 1rem 0;
+    color: #666;
+    line-height: 1.5;
+}
+
+.route-highlights {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.5rem;
+    margin: 1rem 0;
+}
+
+.highlight-tag {
+    background: rgba(33, 150, 243, 0.1);
+    color: var(--primary-color);
+    padding: 0.3rem 0.8rem;
+    border-radius: 15px;
+    font-size: 0.9rem;
+}
+
+
+.route-button {
+    width: 100%;
+    /* כפתור ברוחב מלא */
+    padding: 1rem;
+    background: var(--primary-color);
+    color: white;
+    border: none;
+    border-radius: 8px;
+    font-size: 1rem;
+    cursor: pointer;
+    transition: background 0.3s ease;
+    margin-top: auto;
+    /* דוחף את הכפתור לתחתית */
+}
+
+.route-button:hover {
+    background: #1976d2;
+}
+
+@media screen and (max-width: 768px) {
+    .routes-grid {
+        grid-template-columns: 1fr;
+        padding: 1rem;
+    }
+}

@@ -1,0 +1,150 @@
+
+/* Styles only for home_page */
+
+
+/* section featured-destinations class - Show the featured-destinations cards*/
+/* Destinations Grid */
+.section-title {
+    text-align: center;
+    margin: 4rem 0 2rem;
+    font-size: 2.5rem;
+    color: var(--text-color);
+}
+
+.destinations-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 2rem;
+    padding: 2rem;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.destination-card {
+    background: white;
+    border-radius: 15px;
+    overflow: hidden;
+    box-shadow: var(--card-shadow);
+    transition: transform var(--transition-speed);
+}
+
+.destination-card:hover {
+    transform: translateY(-10px);
+}
+
+.card-image {
+    position: relative;
+    height: 200px;
+    overflow: hidden;
+}
+
+.card-image img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transition: transform var(--transition-speed);
+}
+
+.destination-card:hover .card-image img {
+    transform: scale(1.1);
+}
+
+.card-overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: linear-gradient(to top, rgba(0, 0, 0, 0.7), transparent);
+    opacity: 0;
+    transition: opacity var(--transition-speed);
+}
+
+.destination-card:hover .card-overlay {
+    opacity: 1;
+}
+
+.card-stats {
+    position: absolute;
+    bottom: 1rem;
+    left: 1rem;
+    display: flex;
+    gap: 1rem;
+    color: white;
+}
+
+.card-content {
+    padding: 1.5rem;
+}
+
+.card-features {
+    display: flex;
+    gap: 1rem;
+    margin: 1rem 0;
+    font-size: 0.9rem;
+    color: #666;
+}
+
+.card-button {
+    width: 100%;
+    padding: 0.8rem;
+    background: var(--primary-color);
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color var(--transition-speed);
+}
+
+.card-button:hover {
+    background: #1976d2;
+}
+
+/*section experience-section class - Show the Reasons why to choose us*/
+.experience-section {
+    background: linear-gradient(45deg, #2196f3, #3f51b5);
+    color: white;
+    padding: 4rem 2rem;
+}
+
+.experience-content {
+    max-width: 1200px;
+    margin: 0 auto;
+    text-align: center;
+}
+
+.experience-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 2rem;
+    margin-top: 3rem;
+}
+
+.experience-item {
+    padding: 2rem;
+    background: rgba(255, 255, 255, 0.1);
+    border-radius: 10px;
+    backdrop-filter: blur(10px);
+    transition: transform var(--transition-speed);
+}
+
+.experience-item:hover {
+    transform: translateY(-5px);
+}
+
+.experience-item i {
+    font-size: 2.5rem;
+    margin-bottom: 1rem;
+}
+
+
+/* Responsive Design */
+@media screen and (max-width: 768px) {
+
+    .experience-grid {
+        grid-template-columns: 1fr;
+    }
+
+
+}
+
