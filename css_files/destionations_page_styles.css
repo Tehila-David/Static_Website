@@ -21,14 +21,11 @@
     background: white;
     border-radius: 15px;
     overflow: hidden;
-    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
-    transition: transform 0.3s ease;
+    box-shadow: var(--card-shadow);
+    transition: transform var(--transition-speed);
     display: flex;
-    /* הפוך את הכרטיס ל-flex container */
     flex-direction: column;
-    /* הצג את כל התוכן בעמודה */
     height: 100%;
-    /* הגדר גובה מלא כדי שהכפתור יוכל להימצא בתחתית */
 }
 
 .route-card:hover {
@@ -45,48 +42,19 @@
     width: 100%;
     height: 100%;
     object-fit: cover;
-    transition: transform 0.3s ease;
+    transition:  transform var(--transition-speed);
 }
 
 .route-card:hover .route-image img {
     transform: scale(1.1);
 }
 
-.route-overlay {
-    position: absolute;
-    top: 0;
-    left: 0;
-    right: 0;
-    bottom: 0;
-    background: linear-gradient(to bottom, rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.6));
-    display: flex;
-    justify-content: space-between;
-    padding: 1rem;
-}
-
-.route-badges {
-    display: flex;
-    gap: 0.5rem;
-}
-
-.route-badge {
-    background: rgba(255, 255, 255, 0.9);
-    color: var(--primary-color);
-    padding: 0.3rem 0.8rem;
-    border-radius: 20px;
-    font-size: 0.8rem;
-    display: flex;
-    align-items: center;
-    gap: 0.3rem;
-}
 
 .route-content {
     padding: 1.5rem;
     display: flex;
     flex-direction: column;
-    /* הצג את התוכן בעמודה */
     flex-grow: 1;
-    /* זה מאפשר לתוכן לתפוס את כל השטח הפנוי */
 }
 
 .route-header {
@@ -118,7 +86,7 @@
 .detail-item {
     display: flex;
     align-items: center;
-    gap: 0.5rem;
+    gap: 0.1rem;
     color: #666;
     font-size: 0.9rem;
 }
@@ -147,7 +115,6 @@
 
 .route-button {
     width: 100%;
-    /* כפתור ברוחב מלא */
     padding: 1rem;
     background: var(--primary-color);
     color: white;
@@ -155,9 +122,9 @@
     border-radius: 8px;
     font-size: 1rem;
     cursor: pointer;
-    transition: background 0.3s ease;
-    margin-top: auto;
-    /* דוחף את הכפתור לתחתית */
+    transition:  transform var(--transition-speed);
+    margin-top: auto; /* Pushes the button to the bottom */
+    font-weight: 500;
 }
 
 .route-button:hover {
@@ -168,7 +135,7 @@
 @media screen and (max-width: 768px) {
     .routes-grid {
         grid-template-columns: 1fr;
-        padding: 1rem;
+        padding:2rem;
     }
 }
 
@@ -184,7 +151,7 @@
     margin: 0 auto;
     background: white;
     border-radius: 15px;
-    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+    box-shadow: var(--card-shadow);
 }
 
 .gallery-item {
@@ -192,18 +159,19 @@
     overflow: hidden;
     aspect-ratio: 4/3;
     cursor: pointer;
-    border-radius: 0;
+    border-radius:10px;
+
 }
 
 .gallery-item img {
     width: 100%;
     height: 100%;
     object-fit: cover;
-    transition: transform 0.3s ease;
+    transition:  transform var(--transition-speed);
 }
 
 .gallery-item:hover img {
-    transform: scale(1.05);
+    transform: scale(1.1);
 }
 
 .gallery-overlay {
@@ -217,7 +185,7 @@
     justify-content: flex-end;
     padding: 1rem;
     opacity: 0;
-    transition: opacity 0.3s ease;
+    transition:  transform var(--transition-speed);
     color: white;
 }
 
@@ -272,7 +240,6 @@
     margin-top: 0rem;
     padding-bottom: 5rem;
     justify-items: center;
-    /* מרכז את התוכן בציר האופקי */
     align-items: center;
     margin: 2rem;
 }

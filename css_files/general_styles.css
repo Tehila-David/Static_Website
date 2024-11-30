@@ -23,7 +23,7 @@ body {
     color: var(--text-color);
 }
 
-/* Navbar Styles */
+/* Navbar Styles - top menu*/
 .navbar {
     position: fixed;
     width: 100%;
@@ -34,10 +34,10 @@ body {
 
 .nav-content {
     max-width: 1250px;
-    margin: 0 auto;
+    margin: 0 auto; /*When an element has a defined width (e.g., max-width), margin: auto distributes the spaces on both sides evenly.*/
     padding: 25px;
-    display: flex;
-    justify-content: space-between;
+    display: flex;/*Flexbox defaults to arrange the inner items in a horizontal row.*/
+    justify-content: space-between; /*Distributes the internal contents evenly*/
     align-items: center;
 }
 
@@ -48,14 +48,14 @@ body {
 }
 
 .globe-icon {
-    font-size: 2rem;
+    font-size: 32px;
     color: var(--primary-color);
     animation: rotate 10s linear infinite;
 }
 
 .nav-links {
     display: flex;
-    gap: 2rem;
+    gap: 32px;
     list-style: none;
 }
 
@@ -83,7 +83,7 @@ body {
 
 .cta-button:hover {
     transform: translateY(-2px);
-    background: var(--secondary-color) !important;
+    background: var(--primary-color) !important;
 }
 
 /* section hero class - Show the main part */
@@ -93,8 +93,6 @@ body {
     min-height: 750px;
     overflow: hidden;
     direction: rtl;
-   
-
 }
 .hero_not_home{
     position: relative;
@@ -103,9 +101,8 @@ body {
     overflow: hidden;
     direction: rtl;
     margin-top: 100px;
-    background-size: cover; /* מותח את התמונה לכיסוי מלא */
-    background-position: center; /* מרכז את התמונה */
-    
+    background-size: cover; /* stretches the image to full coverage */
+    background-position: center; /* centers the image */
 }
 
 .hero-background-slider {
@@ -126,15 +123,17 @@ body {
     background-size: cover;
     background-position: center;
     opacity: 0;
-    animation: slideShow 15s infinite;
+    animation: slideShow 15s linear infinite;
 }
 
 .hero-background-slider .slide:nth-child(2) {
-    animation-delay: 6.66s;
-}
+    animation-delay: 3.66s;
+}/*Specifies that the second 
+.slide element will have a delay of 3.66 seconds before its animation begins.
+*/
 
 .hero-background-slider .slide:nth-child(3) {
-    animation-delay: 13.32s;
+    animation-delay: 6.32s;
 }
 
 .hero-overlay {
@@ -143,9 +142,8 @@ body {
     left: 0;
     width: 100%;
     height: 100%;
-    background: linear-gradient(to bottom,
-            rgba(0, 0, 0, 0.5),
-            rgba(0, 0, 0, 0.7));
+    background: 
+            rgba(0, 0, 0, 0.5);
 }
 
 .hero-content {
@@ -165,11 +163,14 @@ body {
 
 .hero-title {
     font-size: 4rem;
-    font-weight: 700;
-    margin-bottom: 1rem;
+    font-weight: 700; /*bold*/
+    margin-top:10rem;
     opacity: 0;
+    margin-bottom: 1rem;
+    opacity: 0; /*The element will be completely transparent (invisible) when the page loads.*/
     animation: fadeInUp 1s forwards;
-    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3);
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3); /*2px 2px – The distance of the shadow in the horizontal and vertical axes (top/bottom, right/left).
+    4px – The size of the shadow (blur distance).*/
 }
 
 .hero-subtitle {
@@ -210,7 +211,7 @@ body {
 footer {
     background: #1a237e;
     color: white;
-    padding: 4rem 2rem 2rem;
+    padding: 4rem 5rem 2rem;/*up , sides, bottom*/
 }
 
 .footer-content {
@@ -221,21 +222,6 @@ footer {
     gap: 3rem;
 }
 
-
-.social-links a {
-    color: white;
-    text-decoration: none;
-    display: block;
-    margin: 0.5rem 0;
-}
-
-.copyright {
-    text-align: center;
-    margin-top: 2rem;
-    padding-top: 1rem;
-    border-top: 1px solid rgba(255, 255, 255, 0.1);
-}
-
 .footer-section h3 {
     margin-bottom: 1.5rem;
     font-size: 1.2rem;
@@ -243,7 +229,7 @@ footer {
     padding-bottom: 0.5rem;
 }
 
-.footer-section h3::after {
+.footer-section h3::after { /*A graphic element (design element) added after the original element. Underline*/
     content: '';
     position: absolute;
     bottom: 0;
@@ -264,7 +250,7 @@ footer {
     justify-content: center;
     width: 40px;
     height: 40px;
-    border-radius: 50%;
+    border-radius: 50%; /*circle */
     background: rgba(255, 255, 255, 0.1);
     color: white;
     text-decoration: none;
@@ -273,7 +259,7 @@ footer {
 
 .social-links a:hover {
     background: var(--secondary-color);
-    transform: translateY(-3px);
+    transform: translateY(-3px);/*translateY() is a transform function that moves the element along the Y axis (vertically).*/
 }
 
 .newsletter-form {
@@ -390,7 +376,7 @@ footer {
     }
 
     .footer-content {
-        grid-template-columns: 1fr;
+        grid-template-columns: 1fr;/*One column*/
         text-align: center;
     }
 
