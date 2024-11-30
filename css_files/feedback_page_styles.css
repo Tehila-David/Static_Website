@@ -1,6 +1,4 @@
-
 /* Styles only for feedback_page */
-/**/
 
 /*reviews-container styles*/
 .feedback-hero {
@@ -138,12 +136,9 @@
     background: #1976d2;
 }
 
+/* Responsive Design for reviews-grid */
 @media screen and (max-width: 768px) {
     .reviews-grid {
         grid-template-columns: 1fr;
-    }
-
-    .filter-buttons {
-        flex-wrap: wrap;
     }
 }

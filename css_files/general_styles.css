@@ -1,6 +1,6 @@
-
 /* General Styles in every page*/
 
+/*Variables*/
 :root {
     --primary-color: #2196f5;
     --secondary-color: #f50057;
@@ -103,6 +103,9 @@ body {
     overflow: hidden;
     direction: rtl;
     margin-top: 100px;
+    background-size: cover; /* מותח את התמונה לכיסוי מלא */
+    background-position: center; /* מרכז את התמונה */
+    
 }
 
 .hero-background-slider {
@@ -370,22 +373,20 @@ footer {
         flex-direction: column;
         gap: 2rem;
     }
-
     .nav-links {
-        position: fixed;
-        top: 70px;
-        right: -100%;
-        width: 100%;
-        height: calc(100vh - 70px);
-        background: white;
-        flex-direction: column;
-        align-items: center;
-        padding: 2rem;
-        transition: right var(--transition-speed);
+        flex-direction: row; /* Keep one row */
+        gap: 10px; /* Smaller spaces */
     }
-
-    .nav-links.active {
-        right: 0;
+        
+    .nav-links a {
+        font-size: 11px; /* Smaller text */
+        padding: 6px 12px; /* Smaller spacing */
+     }
+        
+    .cta-button {
+        font-size: 14px; /* Smaller text */
+        padding: 6px 16px; /* Smaller spacing */
+        border-radius: 80px; /* Compact rounded corners */
     }
 
     .footer-content {

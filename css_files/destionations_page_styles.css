@@ -1,6 +1,13 @@
-/* Styles only for destionations_page */
+/* Styles only for destionations_page + country_page */
 
-/*dest card -section styles*/
+/*dest card - section styles*/
+.section-title {
+    text-align: center;
+    margin: 4rem 0 2rem;
+    font-size: 2.5rem;
+    color: var(--text-color);
+}
+
 .routes-grid {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
@@ -157,9 +164,116 @@
     background: #1976d2;
 }
 
+/* Responsive Design for routes grid */
 @media screen and (max-width: 768px) {
     .routes-grid {
         grid-template-columns: 1fr;
         padding: 1rem;
     }
 }
+
+
+
+/* Image Gallery Grid */
+.gallery-grid {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 0.25rem;
+    padding: 1rem;
+    max-width: 1200px;
+    margin: 0 auto;
+    background: white;
+    border-radius: 15px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+}
+
+.gallery-item {
+    position: relative;
+    overflow: hidden;
+    aspect-ratio: 4/3;
+    cursor: pointer;
+    border-radius: 0;
+}
+
+.gallery-item img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transition: transform 0.3s ease;
+}
+
+.gallery-item:hover img {
+    transform: scale(1.05);
+}
+
+.gallery-overlay {
+    position: absolute;
+    inset: 0;
+    background: linear-gradient(0deg,
+            rgba(0, 0, 0, 0.7) 0%,
+            rgba(0, 0, 0, 0) 50%);
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    padding: 1rem;
+    opacity: 0;
+    transition: opacity 0.3s ease;
+    color: white;
+}
+
+.gallery-item:hover .gallery-overlay {
+    opacity: 1;
+}
+
+.gallery-overlay h3 {
+    font-size: 1rem;
+    margin-bottom: 0.2rem;
+    font-weight: 500;
+}
+
+.gallery-overlay p {
+    font-size: 0.8rem;
+    opacity: 0.9;
+}
+/* Responsive Design for gallery */ 
+@media screen and (max-width: 768px) {
+    .gallery-grid {
+        grid-template-columns: repeat(2, 1fr);
+        gap: 0.2rem;
+        padding: 0.5rem;
+    }
+}
+
+/* Interactive map */
+.map-section {
+    padding: 0rem 0;
+    background: white;
+}
+
+.map-container {
+    max-width: 1100px;
+    margin: 0 auto;
+    padding: 2rem;
+}
+
+.map-frame {
+    width: 100%;
+    height: 500px;
+    border-radius: 15px;
+    border: none;
+    box-shadow: var(--card-shadow);
+}
+
+/* season */
+.tips-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 2rem;
+    margin-top: 0rem;
+    padding-bottom: 5rem;
+    justify-items: center;
+    /* מרכז את התוכן בציר האופקי */
+    align-items: center;
+    margin: 2rem;
+}
+
