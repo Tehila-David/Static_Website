@@ -26,7 +26,7 @@
     border-radius: 15px;
     padding: 2rem;
     box-shadow: var(--card-shadow);
-    transition: transform var(--transition-speed);
+    transition:  var(--transition-speed);
 }
 
 .review-card:hover {
@@ -129,16 +129,10 @@
     border-radius: 8px;
     font-size: 1rem;
     cursor: pointer;
-    transition: background var(--transition-speed);
+    transition:  var(--transition-speed);
 }
 
 .submit-button:hover {
     background: #1976d2;
 }
 
-/* Responsive Design for reviews-grid */
-@media screen and (max-width: 768px) {
-    .reviews-grid {
-        grid-template-columns: 1fr;
-    }
-}
