@@ -139,9 +139,51 @@
     }
 }
 
-
+.live-flights {
+    background: #f8f9fa;
+    padding: 2rem 2rem;
+ }
+ 
+ 
+ .live-flights embed {
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+    background: white;
+    max-width: 1200px;
+    margin: 0 auto;
+    display: block;
+ }
+ 
+ @media (max-width: 768px) {
+    .live-flights embed {
+        width: 100%;
+        height: 300px;
+    }
+ }
 
 /* Image Gallery Grid */
+
+.audio-container {
+    text-align: center;
+    margin: 20px 0;
+    padding: 10px;
+    background: rgba(0,0,0,0.05);
+    border-radius: 8px;
+}
+
+.audio-title {
+    display: block;
+    margin-bottom: 10px;
+    font-size: 0.9rem;
+    color: var(--primary-color);
+}
+
+.audio-container audio {
+    width: 250px;
+    height: 30px;
+}
+
+
 .gallery-grid {
     display: grid;
     grid-template-columns: repeat(4, 1fr);
@@ -152,6 +194,7 @@
     background: white;
     border-radius: 15px;
     box-shadow: var(--card-shadow);
+    
 }
 
 .gallery-item {
@@ -246,7 +289,7 @@
 
 /* Pricing Table Styles */
 .pricing-section {
-    padding: 4rem 2rem;
+    padding: 2rem 2rem;
     background: #f8f9fa;
     margin-top: 0.5rem auto;
  }
