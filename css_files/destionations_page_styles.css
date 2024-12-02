@@ -14,7 +14,7 @@
     gap: 2rem;
     padding: 2rem;
     max-width: 1200px;
-    margin: 0 auto;
+    margin-top: 5rem;
 }
 
 .route-card {
@@ -244,3 +244,61 @@
     margin: 2rem;
 }
 
+/* Pricing Table Styles */
+.pricing-section {
+    padding: 4rem 2rem;
+    background: #f8f9fa;
+    margin-top: 0.5rem auto;
+ }
+ 
+ .pricing-table {
+    width: 100%;
+    max-width: 1200px;
+    margin: 1rem auto;
+    border-collapse: collapse;
+    background: white;
+    box-shadow: var(--card-shadow);
+    border-radius: 15px;
+    overflow: hidden;
+ }
+ 
+ .pricing-table th,
+ .pricing-table td {
+    padding: 1.5rem;
+    text-align: center;
+    border: 1px solid #eee;
+ }
+ 
+ .pricing-table thead {
+    background: var(--primary-color);
+    color: white;
+ }
+ 
+ .pricing-table th {
+    font-weight: 600;
+    font-size: 1.1rem;
+ }
+ 
+ .pricing-table tbody tr:nth-child(even) {
+    background: #f8f9fa;
+ }
+ 
+ .pricing-table tbody tr:hover {
+    background: #e9ecef;
+ }
+ 
+ .pricing-table td:first-child {
+    font-weight: 600;
+    color: var(--primary-color);
+ }
+ 
+ @media screen and (max-width: 768px) {
+    .pricing-table {
+        font-size: 0.9rem;
+    }
+    
+    .pricing-table th,
+    .pricing-table td {
+        padding: 1rem 0.5rem;
+    }
+ }
