@@ -14,7 +14,7 @@ A responsive static travel website built with HTML and CSS as the first project 
 
 ## ✨ Key Features
 
-- Responsive design for all screen sizes
+- Responsive design 
 - RTL (Right-to-Left) support for Hebrew
 - Smooth animations and transitions
 - Interactive destination cards
