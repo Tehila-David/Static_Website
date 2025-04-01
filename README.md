@@ -66,33 +66,24 @@ Show Image
 ## 📸 Screenshots
 ### Home Page
 <p align="left">
-<img src="https://github.com/Tehila-David/Static_Website/blob/main/Screenshots/home_page1.jpg" width="80%">
+<img src="https://github.com/Tehila-David/Static_Website/blob/main/Screenshots/home_page.png" width="80%">
 </p>
+
+### Destinations Page
 <p align="left">
-<img src="https://github.com/Tehila-David/Static_Website/blob/main/Screenshots/home_page2.jpg" width="80%">
-</p>
-<p align="left">
-<img src="https://github.com/Tehila-David/Static_Website/blob/main/Screenshots/home_page3.jpg" width="80%">
+<img src="https://github.com/Tehila-David/Static_Website/blob/main/Screenshots/country_page.png" width="80%">
 </p>
 
 ### Thailand Destination Page
 <p align="left">
-<img src="https://github.com/Tehila-David/Static_Website/blob/main/Screenshots/dest_page1.jpg" width="80%">
-</p>
-<p align="left">
-<img src="https://github.com/Tehila-David/Static_Website/blob/main/Screenshots/dest_page2.jpg" width="80%">
-</p>
-<p align="left">
-<img src="https://github.com/Tehila-David/Static_Website/blob/main/Screenshots/dest_page3.jpg" width="80%">
+<img src="https://github.com/Tehila-David/Static_Website/blob/main/Screenshots/dest_page.png" width="80%">
 </p>
 
 ### Feedback Page
 <p align="left">
-<img src="https://github.com/Tehila-David/Static_Website/blob/main/Screenshots/feedback_page1.jpg" width="80%">
+<img src="https://github.com/Tehila-David/Static_Website/blob/main/Screenshots/feedback_page.png" width="80%">
 </p>
-<p align="left">
-<img src="https://github.com/Tehila-David/Static_Website/blob/main/Screenshots/feedback_page2.jpg" width="80%">
-</p>
+
 
 
 
