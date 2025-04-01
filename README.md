@@ -79,6 +79,12 @@ Show Image
 <img src="https://github.com/Tehila-David/Static_Website/blob/main/Screenshots/dest_page.png" width="80%">
 </p>
 
+### Thailand Destination Route Page
+<p align="left">
+<img src="https://github.com/Tehila-David/Static_Website/blob/main/Screenshots/route_page.png" width="80%">
+</p>
+
+
 ### Feedback Page
 <p align="left">
 <img src="https://github.com/Tehila-David/Static_Website/blob/main/Screenshots/feedback_page.png" width="80%">
