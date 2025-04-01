@@ -27,7 +27,7 @@ A responsive static travel website built with HTML and CSS as the first project 
 
 ```
 /
-├── home_page.html                 # Website homepage
+├── index.html                 # Website homepage
 ├── css_files/                     # CSS stylesheets directory
 │   ├── general_styles.css         # Common styles for all pages
 │   ├── home_page_styles.css       # Homepage specific styles
@@ -40,13 +40,7 @@ A responsive static travel website built with HTML and CSS as the first project 
     └── Destinations/              # Country-specific pages
 ```
 
-## 📸 Screenshots
 
-[Add your screenshots here]
-
-## ⚙️ Setup
-
-Simply open `home_page.html` in any modern web browser to view the website.
 
 ## 📑 Pages Overview
 
@@ -56,11 +50,4 @@ Simply open `home_page.html` in any modern web browser to view the website.
 - **Tour Pages:** Specific tour routes with itineraries and booking forms
 - **Reviews Page:** Customer testimonials and review submission
 
-## 👥 Authors
 
-- Tehila David (324926419)
-- Yael Nave (213113889)
-
-## 📄 License
-
-This project is licensed under the MIT License.
