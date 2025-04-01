@@ -62,70 +62,40 @@ Show Image
 - **Country Pages:** Detailed information about specific countries
 - **Tour Pages:** Specific tour routes with itineraries and booking forms
 - **Reviews Page:** Customer testimonials and review submission
-# 🌍 Explore World - Travel Website | Frontend Development Assignment
-
-A responsive static travel website created as part of a Fullstack Development curriculum, focused on HTML/CSS implementation with modern design principles and RTL language support.
-
-## 📋 Overview
-
-**Explore World** is a travel website designed as an HTML/CSS implementation assignment for a Fullstack Development program. The site enables users to browse destinations, tour packages, and traveler reviews with comprehensive RTL support for Hebrew language, demonstrating frontend development fundamentals.
-
-## 💻 Technologies
-
-- HTML5
-- CSS3 (Grid, Flexbox, Animations)
-- Font Awesome (icons)
-- Responsive Design
-
-## ✨ Key Features
-
-- Responsive design for all screen sizes
-- RTL (Right-to-Left) support for Hebrew
-- Smooth animations and transitions
-- Interactive destination cards
-- Detailed country pages with photo galleries
-- Tour package details with booking forms
-- Customer reviews and testimonials
-- Interactive maps integration
-
-## 📁 Project Structure
-
-```
-/
-├── home_page.html                 # Website homepage
-├── css_files/                     # CSS stylesheets directory
-│   ├── general_styles.css         # Common styles for all pages
-│   ├── home_page_styles.css       # Homepage specific styles
-│   ├── destionations_page_styles.css  # Destination pages styles
-│   ├── route_dest_page_styles.css # Route details page styles
-│   └── feedback_page_styles.css   # Reviews page styles
-├── html_files/                    # HTML pages directory
-    ├── destionations_page.html    # Main destinations listing
-    ├── feedback_page.html         # Reviews and testimonials
-    └── Destinations/              # Country-specific pages
-```
 
 ## 📸 Screenshots
+### Home Page
+<p align="left">
+<img src="https://github.com/Tehila-David/Static_Website/blob/main/Screenshots/home_page1.jpg" width="80%">
+</p>
+<p align="left">
+<img src="https://github.com/Tehila-David/Static_Website/blob/main/Screenshots/home_page2.jpg" width="80%">
+</p>
+<p align="left">
+<img src="https://github.com/Tehila-David/Static_Website/blob/main/Screenshots/home_page3.jpg" width="80%">
+</p>
 
 ### Thailand Destination Page
-![Thailand Page](screenshots/Image1.jpg)
+<p align="left">
+<img src="https://github.com/Tehila-David/Static_Website/blob/main/Screenshots/dest_page1.jpg" width="80%">
+</p>
+<p align="left">
+<img src="https://github.com/Tehila-David/Static_Website/blob/main/Screenshots/dest_page2.jpg" width="80%">
+</p>
+<p align="left">
+<img src="https://github.com/Tehila-David/Static_Website/blob/main/Screenshots/dest_page3.jpg" width="80%">
+</p>
 
-### Featured Tour Routes
-![Tour Routes](screenshots/Image2.jpg)
+### Feedback Page
+<p align="left">
+<img src="https://github.com/Tehila-David/Static_Website/blob/main/Screenshots/feedback_page1.jpg" width="80%">
+</p>
+<p align="left">
+<img src="https://github.com/Tehila-David/Static_Website/blob/main/Screenshots/feedback_page2.jpg" width="80%">
+</p>
 
-### Photo Gallery
-![Gallery](screenshots/Image3.jpg)
 
-### Traveler Reviews
-![Reviews](screenshots/Image4.jpg)
 
-### Home Page
-![Home Page](screenshots/Image6.jpg)
 
-### Featured Destinations
-![Destinations](screenshots/Image7.jpg)
-
-### Features Section
-![Features](screenshots/Image8.jpg)
 
 
